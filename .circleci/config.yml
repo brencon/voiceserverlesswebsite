@@ -21,7 +21,6 @@ jobs:
             yum -y install python36u
             yum -y install python36u-pip
             yum -y install python36u-devel
-            yum -y install python36 python36-devel python36-pip
 
       - run:
           name: Install AWS CLI
