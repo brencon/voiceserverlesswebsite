@@ -15,19 +15,22 @@ jobs:
             yum -y update
             yum -y install yum-utils
             yum -y groupinstall development
+            yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+            yum -y install epel-release
             yum -y install https://centos7.iuscommunity.org/ius-release.rpm
             yum -y install python36u
             yum -y install python36u-pip
             yum -y install python36u-devel
+            yum -y install python36 python36-devel python36-pip
 
       - run:
           name: Install AWS CLI
           command: |
-            pip install awscli
+            pip-3.6 install awscli
 
       - run:
           name: Install Hugo
           command: |
             cp hugo_installation_config.txt /etc/yum.repos.d/CentOS-hugo.repo
-            yum install -y hugo
+            yum -y install hugo
             hugo version
