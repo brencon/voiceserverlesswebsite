@@ -4,7 +4,7 @@
 
 To install Hugo on CentOS, Red Hat Linux you may use yum. First you have to add the repository by creating a file in /etc/yum.repos.d/ and add the following content in it. You may need root access.
 
-`vi /etc/yum.repos.d/CentOS-hugo.repo`
+`sudo vi /etc/yum.repos.d/CentOS-hugo.repo`
 
 ```
 [daftaupe-hugo]
