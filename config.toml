@@ -1,0 +1,22 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Route to Excellence"
+theme = "hugo-theme-learn"
+defaultContentLanguageInSubdir = true
+
+[params]
+    description = "A place of excellence"
+    author = "Brendan"
+    showVisitedLinks = true
+    
+[Languages]
+[Languages.en]
+title = "Route to Excellence"
+weight = 1
+languageName = "English"
+
+[Languages.fr]
+title = "Route to Franch"
+weight = 2
+languageName = "French"
