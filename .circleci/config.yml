@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Install AWS CLI
           command: |
-            pip install awscli
+            pip3 install awscli
 
       - run:
           name: Install Hugo
